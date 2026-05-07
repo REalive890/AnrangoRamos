@@ -1,0 +1,13 @@
+extends layout
+
+append head
+	script(src='/javascripts/scelta.js')
+block content
+	h1 TEST DI INFORMATICA
+	br
+	label(for="nome") Inserisci il nome:
+	input(type="text", id="nome")
+	label(for="argomenti") Scegli un argomento:
+	select(id="argomenti")
+	br
+	button(id="invia") Invia
